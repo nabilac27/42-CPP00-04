@@ -1,0 +1,46 @@
+
+number
+  ↓
+multiply by 256
+  ↓
+store integer (raw bits)
+  ↓
+THIS STORED INTEGER IS THE FIXED-POINT NUMBER
+  ↓
+inside the Fixed object
+  ↓
+divide by 256 when converting or printing
+  ↓
+real number shown
+
+----
+
+User number
+3.75
+   ↓
+main.cpp
+Fixed a(3.75f);
+
+   ↓
+constructor
+Fixed::Fixed(float)
+
+   ↓
+multiply by 256
+floatNumber * 256
+
+   ↓
+store integer
+fixedPointNumber = 960
+
+   ↓
+this is the fixed-point number
+fixedPointNumber
+
+   ↓
+convert back
+toFloat()
+
+   ↓
+display
+operator<<

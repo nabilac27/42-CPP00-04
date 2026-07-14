@@ -1,0 +1,42 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: nchairun <nchairun@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/11/02 13:24:21 by nchairun          #+#    #+#              #
+#    Updated: 2025/11/02 13:46:04 by nchairun         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+CC      = c++
+CFLAGS  = -Wall -Wextra -Werror -std=c++98
+
+NAME    = harl
+
+OBJ_DIR = obj
+INC_DIR = include
+
+SRCS    = main.cpp Harl.cpp
+OBJS    = $(addprefix $(OBJ_DIR)/, $(notdir $(SRCS:.cpp=.o)))
+
+.SILENT:
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+
+$(OBJ_DIR)/%.o: %.cpp
+	mkdir -p $(OBJ_DIR)
+	$(CC) $(CFLAGS) -I$(INC_DIR) -c $< -o $@
+
+clean:
+	rm -rf $(OBJ_DIR)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
