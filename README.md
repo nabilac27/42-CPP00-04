@@ -16,11 +16,11 @@ Solutions for **42 School C++ Modules CPP00–CPP04**, covering the fundamentals
 
 | Module | Topics |
 |--------|--------|
-| **[CPP00](https://github.com/nabilac27/42-CPP00-04/CPP00)** | C++ basics, classes, member functions |
-| **[CPP01](https://github.com/nabilac27/42-CPP00-04/CPP01)** | Memory allocation, pointers, references |
-| **[CPP02](https://github.com/nabilac27/42-CPP00-04/CPP02)** | Orthodox Canonical Form, operator overloading |
-| **[CPP03](https://github.com/nabilac27/42-CPP00-04/CPP03)** | Inheritance |
-| **[CPP04](https://github.com/nabilac27/42-CPP00-04/CPP04)** | Polymorphism, abstract classes |
+| **[CPP00](https://github.com/nabilac27/42-CPP00-04/tree/main/CPP00)** | C++ basics, classes, member functions |
+| **[CPP01](https://github.com/nabilac27/42-CPP00-04/tree/main/CPP01)** | Memory allocation, pointers, references |
+| **[CPP02](https://github.com/nabilac27/42-CPP00-04/tree/main/CPP02)** | Orthodox Canonical Form, operator overloading |
+| **[CPP03](https://github.com/nabilac27/42-CPP00-04/tree/main/CPP03)** | Inheritance |
+| **[CPP04](https://github.com/nabilac27/42-CPP00-04/tree/main/CPP04)** | Polymorphism, abstract classes |
 
 ---
 
